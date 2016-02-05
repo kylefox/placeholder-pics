@@ -39,6 +39,8 @@ The following optional parameters are accepted.
 
 ![](https://camo.githubusercontent.com/df781f87da2f2db87b5cc3125d5459bc70812112/687474703a2f2f64726f70732e6b796c65666f782e63612f31637147502b)
 
+Just kidding, you know what to do. [Submit an issue.](https://github.com/kylefox/placeholder-pics/issues)
+
 # Font Credits
 
 [Source Sans Pro](https://www.google.com/fonts/specimen/Source+Sans+Pro) was designed by [Paul D. Hunt](https://plus.google.com/108888178732927400671/about) and is distributed under the [SIL Open Font License, 1.1.](http://scripts.sil.org/OFL)
