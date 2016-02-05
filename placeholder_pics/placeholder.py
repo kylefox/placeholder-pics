@@ -22,6 +22,7 @@ class PlaceholderPic(object):
         '#2095f2',  # Blue
         '#009587',  # Teal
         '#8ac249',  # light green
+        '#fdbf2e',  # Amber
         '#fe9700',  # Orange
         '#fe5621',  # Deep orange
         '#785447',  # Brown
