@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='placeholder-pics',
-    version='1.0.0',
+    version='1.0.1',
     description="Easily generate placeholder pictures for your users.",
     url="https://github.com/kylefox/placeholder-pics",
     author="Kyle Fox",
