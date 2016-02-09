@@ -33,7 +33,7 @@ The following optional parameters are accepted.
 | ------------- | ------------- | ------------- |
 | `size` | `300` | Image dimensions (always square) |
 | `foreground` | `"#ffffff"` | Text color (hex format, _with_ leading #) |
-| `background` | `None` | Background color (hex format, _with_ leading #). If `None`, our algorithm (`random.choice`) will choose a nice color for you, no sweat. |
+| `background` | `None` | Background color (hex format, _with_ leading #). If `None`, our algorithm (`random.choice`) will choose a nice [Material Design](https://www.google.com/design/spec/style/color.html#color-color-palette) color for you, no sweat. Pass `"random"` to generate a _totally_ random color. |
 | `font_file` | `"SourceSansPro-Regular.ttf"` | File name of the font you'd like to use. [Source Sans Regular](https://www.google.com/fonts/specimen/Source+Sans+Pro) is included by default. See [`PIL.ImageFont`](http://pillow.readthedocs.org/en/3.0.x/reference/ImageFont.html) for more info on how fonts are loaded. |
 | `font_size` | `None` | Font size, in points. If `None`, will default to `size/2`, which seems to be a decent proportion. |
 

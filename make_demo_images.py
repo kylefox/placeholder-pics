@@ -1,4 +1,5 @@
 #!/usr/bin/env python
+import sys
 import os
 import random
 import string
@@ -14,8 +15,16 @@ if __name__ == '__main__':
     if not os.path.isdir('demo-images'):
         os.mkdir('demo-images')
 
-    for idx, bg in enumerate(PlaceholderPic.BACKGROUNDS):
+    if len(sys.argv) == 2:
+        try:
+            count = int(sys.argv[1])
+        except ValueError:
+            count = 25
+        backgrounds = ['random' for _ in range(count)]
+    else:
+        backgrounds = PlaceholderPic.BACKGROUNDS
+
+    for idx, bg in enumerate(backgrounds):
         p = PlaceholderPic(_chars(), background=bg, size=100)
         filename = '{}-{}.png'.format(idx, bg.replace('#', ''))
-
         p.image.save(os.path.join('demo-images', filename), format='PNG')
