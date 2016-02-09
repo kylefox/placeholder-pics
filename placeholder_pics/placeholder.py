@@ -12,21 +12,27 @@ class PlaceholderPic(object):
         'font_size': None,
     }
 
+    # https://www.google.com/design/spec/style/color.html#color-color-palette
     BACKGROUNDS = [
-        '#f34235',  # Red
-        '#e81d62',  # Pink
-        '#9b26af',  # Purple
-        '#6639b6',  # Deep purple
-        '#363f45',  # Slate
-        '#3e50b4',  # Indigo
-        '#2095f2',  # Blue
-        '#009587',  # Teal
-        '#8ac249',  # light green
-        '#fdbf2e',  # Amber
-        '#fe9700',  # Orange
-        '#fe5621',  # Deep orange
-        '#785447',  # Brown
-        '#5f7c8a',  # Blue Grey
+        '#F44336',  # Red
+        '#E91E63',  # Pink
+        '#9C27B0',  # Purple
+        '#673AB7',  # Deep purple
+        '#3F51B5',  # Indigo
+        '#2196F3',  # Blue
+        '#03A9F4',  # Light Blue
+        '#00BCD4',  # Cyan
+        '#009688',  # Teal
+        '#4CAF50',  # Green
+        '#8BC34A',  # Light Green
+        '#CDDC39',  # Lime
+        '#FFEB3B',  # Yellow
+        '#FFC107',  # Amber
+        '#FF9800',  # Orange
+        '#FF5722',  # Deep Orange
+        '#795548',  # Brown
+        '#9E9E9E',  # Grey
+        '#607D8B',  # Blue Grey
     ]
 
     def __init__(self, text, **kwargs):
