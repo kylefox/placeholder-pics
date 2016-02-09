@@ -60,3 +60,12 @@ class TestCustom(unittest.TestCase):
         self.assertEqual(
             PlaceholderPic('KF', font_size=10).font_size,
             10)
+
+    def test_random_background(self):
+        self.assertRegexpMatches(
+            PlaceholderPic('KF', background='random').background,
+            r'#([0-9A-F]{6})')
+
+        self.assertRegexpMatches(
+            PlaceholderPic('KF', background='RANDOM').background,
+            r'#([0-9A-F]{6})')

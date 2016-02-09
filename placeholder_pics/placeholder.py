@@ -35,12 +35,18 @@ class PlaceholderPic(object):
         '#607D8B',  # Blue Grey
     ]
 
+    @classmethod
+    def random_color(self):
+        return "#%06x" % random.randint(0, 0xFFFFFF)
+
     def __init__(self, text, **kwargs):
         self.text = text
         options = PlaceholderPic.DEFAULTS.copy()
         options.update(**kwargs)
         if options['background'] is None:
             options['background'] = random.choice(PlaceholderPic.BACKGROUNDS)
+        if options['background'].lower() == 'random':
+            options['background'] = PlaceholderPic.random_color().upper()
         if options['font_size'] is None:
             options['font_size'] = int(options['size']/2)
         for key, value in options.items():
