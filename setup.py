@@ -9,6 +9,9 @@ setup(
     author_email="kylefox@gmail.com",
     license="MIT",
     packages=['placeholder_pics'],
+    package_data={
+        'placeholder_pics': ['SourceSansPro-Regular.ttf'],
+    },
     install_requires=['Pillow'],
     zip_safe=False,
 )

@@ -1,14 +1,18 @@
+import pkg_resources
 import random
 from PIL import Image, ImageFont, ImageDraw
 
 
 class PlaceholderPic(object):
 
+    DEFAULT_FONT_FILE = pkg_resources.resource_filename(
+        __name__, 'SourceSansPro-Regular.ttf')
+
     DEFAULTS = {
         'size': 300,
         'foreground': '#ffffff',
         'background': None,
-        'font_file': 'SourceSansPro-Regular.ttf',
+        'font_file': DEFAULT_FONT_FILE,
         'font_size': None,
     }
 
