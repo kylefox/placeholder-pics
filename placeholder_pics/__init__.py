@@ -1,1 +1,1 @@
-from placeholder import PlaceholderPic
+from placeholder_pics.placeholder import PlaceholderPic
